@@ -79,6 +79,6 @@ pub fn main() !void {
         else => |e| return e,
     };
 
-    try writer.print("{{\"text\":\"   {d}ms\", \"tooltip\":\"Target: {s}\"}}", .{ latency, TARGET });
+    try writer.print("{{\"text\":\"  {d}ms\", \"tooltip\":\"Target: {s}\"}}", .{ latency, TARGET });
     try bw.flush();
 }
